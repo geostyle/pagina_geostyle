@@ -3,6 +3,8 @@ html {
   font-size: 62.5%;
   box-sizing: border-box; /* Hack para Box Model **/
   scroll-snap-type: y mandatory;
+  height: 100%;
+  margin: 0;
 }
 
 body {
@@ -14,12 +16,7 @@ body {
   line-height: 1.7;
   text-align: center;
   margin: 0;
-}
-
-html,
-body {
   height: 100%;
-  margin: 0;
 }
 
 .page-container {
@@ -93,6 +90,7 @@ a {
   font-size: 5rem;
   text-align: center;
   font-weight: bold;
+  font-family: sans-serif;
 }
 
 .subtitulo-inicio {
@@ -237,27 +235,88 @@ a {
   --grisClaro: #dfe9f3;
 }
 
+/*
 .nav-bg {
   background-color: var(--secundario);
 }
+*/
+.nav-bg {
+  background-color: var(--secundario);
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Esto centrará verticalmente los elementos */
+}
+
+.nav-bg img {
+  width: 14rem; /* Tamaño de la imagen */
+  margin-right: 10rem; /* Esto añade algo de espacio entre la imagen y el menú */
+  margin-left: 15rem;
+}
+
 .navegacion-principal {
   display: flex;
   flex-direction: column;
   width: 100%;
   justify-content: space-between;
+  margin-right: 10rem;
 }
+
+/*
 @media (min-width: 768px) {
   .navegacion-principal {
     flex-direction: row;
   }
 }
+*/
 
+/* Oculta el icono del menú y muestra el menú completo por defecto */
+.menu-icon {
+  display: none;
+  color: white; /* Hace que el ícono del menú sea blanco */
+  margin-left: 0; /* Mueve el ícono más a la izquierda */
+}
+
+.logo {
+  display: block;
+  /* Ajusta el tamaño de tu logo aquí */
+  width: 10rem;
+  height: auto;
+}
+
+.navegacion-principal ul {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .navegacion-principal ul {
+    display: none;
+  }
+
+  .nav-bg img {
+    width: 14rem; /* Tamaño de la imagen */
+    margin-right: 7rem; /* Esto añade algo de espacio entre la imagen y el menú */
+    margin-left: 5rem;
+  }
+}
+
+/*
+.navegacion-principal ul li {
+  margin: 0;
+  padding: 0;
+}
+*/
 .navegacion-principal a {
   display: block;
   text-align: center;
   color: var(--blanco);
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: 700;
   padding: 1rem;
 }
