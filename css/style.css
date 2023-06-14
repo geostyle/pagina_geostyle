@@ -235,11 +235,6 @@ a {
   --grisClaro: #dfe9f3;
 }
 
-/*
-.nav-bg {
-  background-color: var(--secundario);
-}
-*/
 .nav-bg {
   background-color: var(--secundario);
   display: flex;
@@ -260,14 +255,6 @@ a {
   justify-content: space-between;
   margin-right: 10rem;
 }
-
-/*
-@media (min-width: 768px) {
-  .navegacion-principal {
-    flex-direction: row;
-  }
-}
-*/
 
 /* Oculta el icono del menú y muestra el menú completo por defecto */
 .menu-icon {
@@ -504,7 +491,7 @@ footer {
     width: 100%;
   }
 
-  .logo {
+  .logo_footer {
     text-align: center;
     margin-bottom: 1rem; /* Añade un margen en la parte inferior para separar el logo de los enlaces */
   }
