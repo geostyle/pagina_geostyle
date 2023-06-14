@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  background-color: #2f3136;
+  background-color: #ededed;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   text-rendering: optimizeLegibility;
@@ -37,7 +37,7 @@ body {
 Ahora esta es la equivalencia:  1rem = 10px*/
 
 h1 {
-  color: white;
+  color: black;
   text-align: center;
 }
 
@@ -47,7 +47,7 @@ h4,
 p,
 ol,
 ul {
-  color: white;
+  color: black;
 }
 
 .servicios {
@@ -55,7 +55,7 @@ ul {
 }
 
 a {
-  color: skyblue;
+  color: #0000ff;
 }
 
 /*CATALOGO CURSOS*/
@@ -203,13 +203,13 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 0.1rem solid skyblue;
+  border: 0.1rem solid black;
   border-radius: 1rem;
   flex: 1;
   margin: 0rem 2rem;
 }
 .servicio h3 {
-  color: white;
+  color: black;
   font-size: 2rem;
 }
 .servicio p {
@@ -418,7 +418,7 @@ a {
 /*FOOTER*/
 
 footer {
-  background-color: #f8f8f8;
+  background-color: grey;
   padding: 1rem 0;
 }
 
@@ -458,7 +458,7 @@ footer {
 }
 
 .footer-links a {
-  color: #333;
+  color: black;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -554,4 +554,10 @@ footer {
 .texto-derecha ul {
   text-align: left;
   padding-left: 1em;
+}
+
+#inicio-background {
+  background-image: url("images/imagen.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; /* Esto hará que la imagen cubra toda la sección main */
 }
