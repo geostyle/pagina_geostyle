@@ -555,9 +555,3 @@ footer {
   text-align: left;
   padding-left: 1em;
 }
-
-#inicio-background {
-  background-image: url("images/fondo_inicio.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover; /* Esto hará que la imagen cubra toda la sección main */
-}
