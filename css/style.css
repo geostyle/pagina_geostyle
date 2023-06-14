@@ -300,8 +300,8 @@ a {
 
   .nav-bg img {
     width: 14rem; /* Tamaño de la imagen */
-    margin-right: 7rem; /* Esto añade algo de espacio entre la imagen y el menú */
-    margin-left: 5rem;
+    margin-right: 4rem; /* Esto añade algo de espacio entre la imagen y el menú */
+    margin-left: 4rem;
   }
 }
 
