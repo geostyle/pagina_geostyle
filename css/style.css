@@ -613,7 +613,7 @@ ul {
 /* Media query para pantallas de hasta 768px (típicamente móviles y tablets) */
 @media (max-width: 768px) {
   .table-container {
-    width: 40%;
+    width: 100%;
     height: 100%;
   }
 }
