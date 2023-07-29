@@ -609,3 +609,11 @@ ul {
   width: 100%; /* Se ajustará al ancho del contenedor */
   height: auto; /* El alto se ajustará proporcionalmente */
 }
+
+/* Media query para pantallas de hasta 768px (típicamente móviles y tablets) */
+@media (max-width: 768px) {
+  .table-container {
+    width: 40%;
+    height: 100%;
+  }
+}
