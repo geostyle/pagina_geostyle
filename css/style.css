@@ -565,7 +565,8 @@ footer {
 /* Tabla contenidos curso AP */
 
 .table-container {
-  width: 70%;
+  width: 40%;
+  height: 100%;
   margin: auto;
 }
 
@@ -573,7 +574,9 @@ table {
   width: 100%;
   border-collapse: collapse;
   font-family: Arial, sans-serif;
-  border: 2px solid black; /* Esta línea añade el borde externo de la tabla */
+  border: 0.2rem solid black; /* Esta línea añade el borde externo de la tabla */
+  font-size: 1.3rem; /* reducido el tamaño de la fuente */
+  height: 0.8rem; /* altura especifica para las celdas, ajustar segun sea necesario */
 }
 
 thead {
@@ -583,9 +586,9 @@ thead {
 
 th,
 td {
-  padding: 15px;
+  padding: 1.3rem;
   text-align: left;
-  border: 1px solid black; /* Esta línea añade el borde a las celdas */
+  border: 0.1rem solid black; /* Esta línea añade el borde a las celdas */
 }
 
 tr:nth-child(even) {
@@ -598,5 +601,11 @@ ul {
 
 .gif_agri {
   border-radius: 3rem;
-  width: 40rem;
+  width: 30rem;
+}
+
+.img-curso-ap {
+  max-width: 45rem;
+  width: 100%; /* Se ajustará al ancho del contenedor */
+  height: auto; /* El alto se ajustará proporcionalmente */
 }
