@@ -232,8 +232,9 @@ a:hover {
   }
    /* Para la sección de opiniones */
   .opiniones-grid {
-    grid-template-columns: 1fr; /* antes: minmax(450px, 1fr) */
-    padding: 0 1rem; /* menos padding para evitar scroll horizontal */
+    grid-template-columns: 1fr; /* Una sola columna */
+    gap: 1rem; /* Separación entre tarjetas */
+    padding: 0 1rem;  
   }
 
   /* Para la sección de eventos */
@@ -245,9 +246,27 @@ a:hover {
   /* Ajustar imágenes en caso de necesidad */
   .img-opinion,
   .img-evento {
-    max-width: 100%;
+    width: 100%;
     height: auto;
   }
+
+  .opiniones-section {
+    padding: 0 1rem; /* Reducir padding lateral */
+  }
+
+  .opinion-card {
+    margin: 0 0 1rem; /* Quitar márgenes laterales */
+    padding: 1rem; /* Ajustar relleno interno */
+  }
+
+  .opiniones-section h1 {
+    font-size: 2rem; /* Tamaño del título más pequeño */
+  }
+
+  .opinion-card p {
+    font-size: 1.4rem; /* Reducir tamaño del texto */
+  }
+
 }
 
 /* 
