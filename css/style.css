@@ -230,6 +230,24 @@ a:hover {
   .logo {
     margin-right: auto;
   }
+   /* Para la sección de opiniones */
+  .opiniones-grid {
+    grid-template-columns: 1fr; /* antes: minmax(450px, 1fr) */
+    padding: 0 1rem; /* menos padding para evitar scroll horizontal */
+  }
+
+  /* Para la sección de eventos */
+  .eventos-grid {
+    grid-template-columns: 1fr; /* ajusta o quita min-width grande */
+    padding: 0 1rem; 
+  }
+
+  /* Ajustar imágenes en caso de necesidad */
+  .img-opinion,
+  .img-evento {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 /* 
