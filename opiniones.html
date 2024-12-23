@@ -1,44 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Opiniones de los cursos</title>
+
+    <!-- Preloads y fuentes -->
     <link rel="preload" href="css/normalize.css" as="style" />
     <link rel="stylesheet" href="css/normalize.css" />
+
+    <!-- Íconos FontAwesome -->
     <script
       rel="preload"
       src="https://kit.fontawesome.com/e43319e4d6.js"
       crossorigin="anonymous"
     ></script>
+
     <link rel="icon" href="images/logo_gs_v2.png" type="image/png" />
+
+    <!-- Estilos principales -->
     <link rel="preload" href="css/style.css" as="style" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="nav-bg">
-      <!-- Empieza el menu -->
-      <a href="index.html"
-        ><img class="logo" src="images/logo_final.svg" alt="logo geostyle"
-      /></a>
+    <!-- Barra de navegación (header) -->
+    <header class="nav-bg">
+      <a href="index.html">
+        <img class="logo" src="images/logo_final.svg" alt="logo geostyle" />
+      </a>
       <nav class="navegacion-principal contenedor">
         <div class="menu-icon">
           <i class="fas fa-bars"></i>
         </div>
         <ul class="menu">
-          <li>
-            <a href="index.html">Inicio</a>
-          </li>
-          <li>
-            <a href="consultorias.html"> Consultorías</a>
-          </li>
+          <li><a href="index.html">Inicio</a></li>
           <li class="submenu">
             <a href="#" id="desplegarMenu1">
-              Cursos <span class="flecha"></span
-            ></a>
+              Cursos <span class="flecha"></span>
+            </a>
             <ul class="opciones">
-              <li><a href="cursos.html"> Catálogo</a></li>
+              <li><a href="cursos.html">Catálogo</a></li>
               <li><a href="ejemplos.html">Ejemplos</a></li>
               <li><a href="metodologia.html">Metodología</a></li>
               <li><a href="opiniones.html">Opiniones</a></li>
@@ -46,91 +48,149 @@
           </li>
           <li class="submenu">
             <a href="#" id="desplegarMenu2">
-              Eventos<span class="flecha"></span
-            ></a>
+              Eventos <span class="flecha"></span>
+            </a>
             <ul class="opciones">
               <li><a href="proximos.html">Próximos</a></li>
               <li><a href="eventos.html">Anteriores</a></li>
             </ul>
           </li>
-          <li>
-            <a href="apps.html">Apps</a>
-          </li>
-          <li>
-            <a href="about.html"> Sobre GeoStyle</a>
-          </li>
-          <li>
-            <a href="contacto.html"> Contacto</a>
-          </li>
+          <li><a href="apps.html">Apps</a></li>
+          <li><a href="consultorias.html">Consultorías</a></li>
+          <li><a href="about.html">Sobre GeoStyle</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
         </ul>
       </nav>
-      <script src="script.js"></script>
-    </div>
-    <!-- Termina el menu -->
-    <h1>Opiniones de los cursos</h1>
+    </header>
+    <script src="script.js"></script>
 
-    <br />
+    <!-- Contenido principal -->
+    <main class="opiniones-section">
+      <h1>Opiniones de los cursos</h1>
+      <p class="texto-intro-opiniones">
+        Estas son algunas opiniones reales de personas que ya han tomado los
+        cursos. Ahora las imágenes son más grandes, para que puedas leer
+        fácilmente los comentarios y comprobar la experiencia de nuestros
+        estudiantes.
+      </p>
 
-    <img class="img-opinion" src="images/2-01.png" /> <br />
-    <img class="img-opinion" src="images/3-02.png" /> <br />
-
-    <img class="img-opinion" src="images/4-01.png" /> <br />
-
-    <img class="img-opinion" src="images/1-01.png" /> <br />
-
-    <img class="img-opinion" src="images/3-01.png" /> <br />
-
-    <img class="img-opinion" src="images/2.png" /> <br />
-
-    <img class="img-opinion" src="images/1.png" /> <br />
-
-    <img class="img-opinion" src="images/4.png" /> <br />
-
-    <img class="img-opinion" src="images/5.png" /> <br />
-
-    <img class="img-opinion" src="images/6.png" /> <br />
-
-    <img class="img-opinion" src="images/7.png" /> <br />
-    <br />
-
-    <a href="cursos.html">Catálogo de los cursos<a>
-
-    <br />
-
-    <br />
-  </body>
-  <!-- Empieza el footer -->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <ul class="footer-links">
-            <li>
-              <a href="mailto:ajsalazar@uc.cl"
-                ><i class="far fa-envelope"></i> ajsalazar@uc.cl</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.youtube.com/channel/UC3Hepnp1iAuiELS5kDGrReQ"
-                target="_blank"
-                ><i class="fab fa-youtube"></i> YouTube</a
-              >
-            </li>
-          </ul>
+      <!-- Rejilla de opiniones (imágenes) -->
+      <section class="opiniones-grid">
+        <!-- Tarjeta 1 -->
+        <div class="opinion-card">
+          <img class="img-opinion" src="images/opinion_1.png" alt="Opinión 1" />
         </div>
-        <div class="col-md-6">
-          <div class="logo_footer">
-            <a href="index.html"
-              ><img
-                class="logo_gs_fin"
-                src="images/logo_final.svg"
-                alt="Logo de tu empresa"
-            /></a>
+        <!-- Tarjeta 2 -->
+        <div class="opinion-card">
+          <img class="img-opinion" src="images/opinion_2.png" alt="Opinión 2" />
+        </div>
+        <!-- Tarjeta 3 -->
+        <div class="opinion-card">
+          <img class="img-opinion" src="images/opinion_3.png" alt="Opinión 3" />
+        </div>
+        <!-- Tarjeta 4 -->
+        <div class="opinion-card">
+          <img class="img-opinion" src="images/opinion_4.png" alt="Opinión 4" />
+        </div>
+        <!-- Tarjeta 5 -->
+        <div class="opinion-card">
+          <img class="img-opinion" src="images/opinion_5.png" alt="Opinión 5" />
+        </div>
+        <!-- Tarjeta 6 -->
+        <div class="opinion-card">
+          <img class="img-opinion" src="images/opinion_6.png" alt="Opinión 6" />
+        </div>
+        <!-- Tarjeta 7 -->
+        <div class="opinion-card">
+          <img class="img-opinion" src="images/opinion_7.png" alt="Opinión 7" />
+        </div>
+        <!-- Tarjeta 8 -->
+        <div class="opinion-card">
+          <img class="img-opinion" src="images/opinion_8.png" alt="Opinión 8" />
+        </div>
+        <!-- Tarjeta 9 -->
+        <div class="opinion-card">
+          <img class="img-opinion" src="images/opinion_9.png" alt="Opinión 9" />
+        </div>
+        <!-- Tarjeta 10 -->
+        <div class="opinion-card">
+          <img
+            class="img-opinion"
+            src="images/opinion_10.png"
+            alt="Opinión 10"
+          />
+        </div>
+        <!-- Tarjeta 11 -->
+        <div class="opinion-card">
+          <img
+            class="img-opinion"
+            src="images/opinion_11.png"
+            alt="Opinión 11"
+          />
+        </div>
+        <!-- Tarjeta 12 -->
+        <div class="opinion-card">
+          <img
+            class="img-opinion"
+            src="images/opinion_12.png"
+            alt="Opinión 12"
+          />
+        </div>
+        <!-- Tarjeta 13 -->
+        <div class="opinion-card">
+          <img
+            class="img-opinion"
+            src="images/opinion_13.png"
+            alt="Opinión 13"
+          />
+        </div>
+        <!-- Tarjeta 14 -->
+        <div class="opinion-card">
+          <img
+            class="img-opinion"
+            src="images/opinion_14.png"
+            alt="Opinión 14"
+          />
+        </div>
+      </section>
+
+      <div class="link-catalogo">
+        <a href="cursos.html">Catálogo de los cursos</a>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-improved">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <ul class="footer-links">
+              <li>
+                <a href="mailto:ajsalazar@uc.cl"
+                  ><i class="far fa-envelope"></i> ajsalazar@uc.cl</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/channel/UC3Hepnp1iAuiELS5kDGrReQ"
+                  target="_blank"
+                  ><i class="fab fa-youtube"></i> YouTube</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <div class="logo_footer">
+              <a href="index.html"
+                ><img
+                  class="logo_gs_fin"
+                  src="images/logo_final.svg"
+                  alt="Logo de tu empresa"
+              /></a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
-  <!-- Termina el footer -->
+    </footer>
+  </body>
 </html>

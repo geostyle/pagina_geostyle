@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sobre GeoStyle</title>
+
+    <!-- Preloads y fuentes -->
     <link rel="preload" href="css/normalize.css" as="style" />
     <link rel="stylesheet" href="css/normalize.css" />
     <script
@@ -12,33 +14,31 @@
       src="https://kit.fontawesome.com/e43319e4d6.js"
       crossorigin="anonymous"
     ></script>
+
     <link rel="icon" href="images/logo_gs_v2.png" type="image/png" />
+
+    <!-- Estilos principales -->
     <link rel="preload" href="css/style.css" as="style" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="nav-bg">
-      <!-- Empieza el menu -->
-      <a href="index.html"
-        ><img class="logo" src="images/logo_final.svg" alt="logo geostyle"
-      /></a>
+    <!-- Encabezado (Navbar) -->
+    <header class="nav-bg">
+      <a href="index.html">
+        <img class="logo" src="images/logo_final.svg" alt="logo geostyle" />
+      </a>
       <nav class="navegacion-principal contenedor">
         <div class="menu-icon">
           <i class="fas fa-bars"></i>
         </div>
         <ul class="menu">
-          <li>
-            <a href="index.html">Inicio</a>
-          </li>
-          <li>
-            <a href="consultorias.html"> Consultorías</a>
-          </li>
+          <li><a href="index.html">Inicio</a></li>
           <li class="submenu">
             <a href="#" id="desplegarMenu1">
-              Cursos <span class="flecha"></span
-            ></a>
+              Cursos <span class="flecha"></span>
+            </a>
             <ul class="opciones">
-              <li><a href="cursos.html"> Catálogo</a></li>
+              <li><a href="cursos.html">Catálogo</a></li>
               <li><a href="ejemplos.html">Ejemplos</a></li>
               <li><a href="metodologia.html">Metodología</a></li>
               <li><a href="opiniones.html">Opiniones</a></li>
@@ -46,152 +46,139 @@
           </li>
           <li class="submenu">
             <a href="#" id="desplegarMenu2">
-              Eventos<span class="flecha"></span
-            ></a>
+              Eventos <span class="flecha"></span>
+            </a>
             <ul class="opciones">
               <li><a href="proximos.html">Próximos</a></li>
               <li><a href="eventos.html">Anteriores</a></li>
             </ul>
           </li>
-          <li>
-            <a href="apps.html">Apps</a>
-          </li>
-          <li>
-            <a href="about.html"> Sobre GeoStyle</a>
-          </li>
-          <li>
-            <a href="contacto.html"> Contacto</a>
-          </li>
+          <li><a href="apps.html">Apps</a></li>
+          <li><a href="consultorias.html">Consultorías</a></li>
+          <li><a href="about.html">Sobre GeoStyle</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
         </ul>
       </nav>
-      <script src="script.js"></script>
-    </div>
-    <!-- Termina el menu -->
-    <h1>Sobre GeoStyle</h1>
-    <br />
+    </header>
+    <script src="script.js"></script>
+    <!-- Fin del Navbar -->
 
-    <p class="texto-sobre-geostyle">
-      GeoStyle es una consultora ambiental originaria de Chile, la cual ofrece
-      consultorías privadas de diversos tipos y cursos / capacitaciones online.
-      <br /><br />
+    <!-- Contenido principal -->
+    <main class="about-section">
+      <h1 class="titulo-about">Sobre GeoStyle</h1>
+      <p class="texto-sobre-geostyle">
+        GeoStyle es una consultora ambiental originaria de Chile, la cual ofrece
+        consultorías privadas de diversos tipos y cursos/capacitaciones online.
+        <br /><br />
+        Recibimos clientes de todas partes del mundo, ya que nos gusta colaborar
+        y aprender de diferentes culturas y realidades. Además, manejamos el
+        idioma español e inglés.
+      </p>
 
-      Recibimos clientes de todas partes del mundo, ya que nos gusta colaborar y
-      aprender de diferentes culturas y realidades. Además, manejamos el idioma
-      español e inglés.
-    </p>
-
-    <br />
-    <br />
-    <!-- Empieza el grid de areas y softwares -->
-    <div class="grid-areas-softwares">
-      <div class="areas">
-        <h4 class="titulo-areas">Las principales áreas de GeoStyle son:</h4>
-        <ul class="contenido-areas">
-          <li>Teledetección</li>
-          <li>SIG</li>
-          <li>Ecología del paisaje</li>
-          <li>Estadística</li>
-        </ul>
-      </div>
-
-      <div class="softwares">
-        <h4 class="titulo-softwares">
-          Principales softwares / plataformas utilizados:
-        </h4>
-        <ul class="contenido-softwares">
-          <li>R</li>
-          <li>Google Earth Engine</li>
-          <li>Python</li>
-          <li>QGIS</li>
-        </ul>
-      </div>
-    </div>
-    <!-- Termina el grid de areas y softwares -->
-
-    <br />
-
-    <hr />
-
-    <br />
-
-    <div style="text-align: center">
-      <h3 class="titulo-fundador">Fundador GeoStyle:</h3>
-
-      <img
-        src="images/1581604252963.jfif"
-        style="width: 236px; border-radius: 50%"
-      />
-    </div>
-
-    <p class="texto-biografia-andres">
-      Andrés Salazar, Magíster en Recursos Naturales e Ingeniero Agrónomo con
-      mención en Gestión Ambiental. Ambos grados estudiados en la Pontificia
-      Universidad Católica de Chile. Sus principales temas de interés son: el
-      cambio climático, la modelación de ecosistemas, la ecología del paisaje,
-      modelos predictivos de Machine Learning, entre otros. Actualmente realiza
-      investigaciones y consultorías en el área de los recursos naturales. Ha
-      colaborado en proyectos de Asia, Brasil, Perú, México, la Patagonia
-      chilena, la zona central de Chile, entre otros. Además, ha capacitado en
-      el uso de lenguajes de programación a profesionales de distintos países de
-      Sudamérica y Centroamérica.
-    </p>
-
-    <br />
-
-    <p>Mail contacto: ajsalazar@uc.cl</p>
-
-    <a
-      href="https://www.linkedin.com/in/andres-salazar-estay/"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Perfil LinkedIn
-    </a>
-
-    <br />
-
-    <a
-      href="https://www.researchgate.net/profile/Andres-Salazar-14"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Perfil Researchgate
-    </a>
-    <br />
-    <br />
-  </body>
-  <!-- Empieza el footer -->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <ul class="footer-links">
-            <li>
-              <a href="mailto:ajsalazar@uc.cl"
-                ><i class="far fa-envelope"></i> ajsalazar@uc.cl</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.youtube.com/channel/UC3Hepnp1iAuiELS5kDGrReQ"
-                target="_blank"
-                ><i class="fab fa-youtube"></i> YouTube</a
-              >
-            </li>
+      <!-- Sección Áreas y Softwares -->
+      <div class="areas-softwares-container">
+        <div class="areas-card">
+          <h3 class="titulo-areas">Áreas Principales</h3>
+          <ul class="contenido-areas">
+            <li>Teledetección</li>
+            <li>SIG</li>
+            <li>Ecología del Paisaje</li>
+            <li>Estadística</li>
           </ul>
         </div>
-        <div class="col-md-6">
-          <div class="logo_footer">
-            <a href="index.html"
-              ><img
-                class="logo_gs_fin"
-                src="images/logo_final.svg"
-                alt="Logo de tu empresa"
-            /></a>
+        <div class="softwares-card">
+          <h3 class="titulo-softwares">Softwares / Plataformas</h3>
+          <ul class="contenido-softwares">
+            <li>R</li>
+            <li>Google Earth Engine</li>
+            <li>Python</li>
+            <li>QGIS</li>
+          </ul>
+        </div>
+      </div>
+
+      <hr />
+
+      <!-- Fundador -->
+      <div class="fundador-container">
+        <h3 class="titulo-fundador">Fundador GeoStyle:</h3>
+        <img
+          class="foto-fundador"
+          src="images/1581604252963.jfif"
+          alt="Foto fundador"
+        />
+      </div>
+
+      <p class="texto-biografia-andres">
+        Andrés Salazar es Ingeniero Agrónomo con mención en Gestión Ambiental y
+        Magíster en Recursos Naturales, ambos títulos otorgados por la
+        Pontificia Universidad Católica de Chile. Su trayectoria profesional e
+        investigativa se centra en temas como el cambio climático, la modelación
+        de ecosistemas, la ecología del paisaje y el desarrollo de modelos
+        predictivos mediante técnicas de Machine Learning, entre otros.
+        Actualmente, Andrés se dedica a la investigación y consultoría en el
+        ámbito de los recursos naturales, con experiencia en proyectos
+        realizados en Asia, Brasil, Perú, México, la Patagonia chilena y la zona
+        central de Chile, entre otros. También se ha destacado como formador,
+        impartiendo capacitaciones en lenguajes de programación a profesionales
+        de diversos países de Sudamérica y Centroamérica.
+      </p>
+
+      <p class="mail-contacto">
+        Mail contacto:
+        <a href="mailto:ajsalazar@uc.cl">ajsalazar@uc.cl</a>
+      </p>
+
+      <div class="perfiles-profesionales">
+        <a
+          href="https://www.linkedin.com/in/andres-salazar-estay/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-perfil"
+          >Perfil LinkedIn</a
+        >
+        <a
+          href="https://www.researchgate.net/profile/Andres-Salazar-14"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-perfil"
+          >Perfil ResearchGate</a
+        >
+      </div>
+    </main>
+
+    <!-- Footer Oscuro Mejorado -->
+    <footer class="footer-improved">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <ul class="footer-links">
+              <li>
+                <a href="mailto:ajsalazar@uc.cl"
+                  ><i class="far fa-envelope"></i> ajsalazar@uc.cl</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/channel/UC3Hepnp1iAuiELS5kDGrReQ"
+                  target="_blank"
+                  ><i class="fab fa-youtube"></i> YouTube</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <div class="logo_footer">
+              <a href="index.html"
+                ><img
+                  class="logo_gs_fin"
+                  src="images/logo_final.svg"
+                  alt="Logo de GeoStyle"
+              /></a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
-  <!-- Termina el footer -->
+    </footer>
+  </body>
 </html>

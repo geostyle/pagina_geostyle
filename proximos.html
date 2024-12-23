@@ -5,43 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Próximos eventos</title>
+
+    <!-- Preloads y fuentes -->
     <link rel="preload" href="css/normalize.css" as="style" />
     <link rel="stylesheet" href="css/normalize.css" />
+
+    <!-- Íconos FontAwesome -->
     <script
       rel="preload"
       src="https://kit.fontawesome.com/e43319e4d6.js"
       crossorigin="anonymous"
     ></script>
+
     <link rel="icon" href="images/logo_gs_v2.png" type="image/png" />
+
+    <!-- Estilos principales -->
     <link rel="preload" href="css/style.css" as="style" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <div class="page-container">
-      <body class="content-wrap">
-        <!-- Empieza el menu -->
-        <div class="nav-bg">
-          <!-- Empieza el menu -->
-          <a href="index.html"
-            ><img class="logo" src="images/logo_final.svg" alt="logo geostyle"
-          /></a>
+      <div class="content-wrap">
+        <!-- Barra de navegación -->
+        <header class="nav-bg">
+          <a href="index.html">
+            <img class="logo" src="images/logo_final.svg" alt="logo geostyle" />
+          </a>
           <nav class="navegacion-principal contenedor">
             <div class="menu-icon">
               <i class="fas fa-bars"></i>
             </div>
             <ul class="menu">
-              <li>
-                <a href="index.html">Inicio</a>
-              </li>
-              <li>
-                <a href="consultorias.html"> Consultorías</a>
-              </li>
+              <li><a href="index.html">Inicio</a></li>
               <li class="submenu">
                 <a href="#" id="desplegarMenu1">
-                  Cursos <span class="flecha"></span
-                ></a>
+                  Cursos <span class="flecha"></span>
+                </a>
                 <ul class="opciones">
-                  <li><a href="cursos.html"> Catálogo</a></li>
+                  <li><a href="cursos.html">Catálogo</a></li>
                   <li><a href="ejemplos.html">Ejemplos</a></li>
                   <li><a href="metodologia.html">Metodología</a></li>
                   <li><a href="opiniones.html">Opiniones</a></li>
@@ -49,33 +50,49 @@
               </li>
               <li class="submenu">
                 <a href="#" id="desplegarMenu2">
-                  Eventos<span class="flecha"></span
-                ></a>
+                  Eventos <span class="flecha"></span>
+                </a>
                 <ul class="opciones">
                   <li><a href="proximos.html">Próximos</a></li>
                   <li><a href="eventos.html">Anteriores</a></li>
                 </ul>
               </li>
-              <li>
-                <a href="apps.html">Apps</a>
-              </li>
-              <li>
-                <a href="about.html"> Sobre GeoStyle</a>
-              </li>
-              <li>
-                <a href="contacto.html"> Contacto</a>
-              </li>
+              <li><a href="apps.html">Apps</a></li>
+              <li><a href="consultorias.html">Consultorías</a></li>
+              <li><a href="about.html">Sobre GeoStyle</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
             </ul>
           </nav>
-          <script src="script.js"></script>
-        </div>
-        <!-- Termina el menu -->
-        <h1>Próximo evento</h1>
-        <p>Por el momento no hay eventos agendados</p>
-        </body>
-        </div>
-      <!-- Empieza el footer -->
-      <footer>
+        </header>
+        <script src="script.js"></script>
+        <!-- Fin de la barra de navegación -->
+
+        <!-- Contenido principal -->
+        <main class="proximos-section">
+          <h1>Próximo Evento</h1>
+          <p class="texto-intro-proximos">
+            Por el momento no hay eventos agendados. Mantente atento a esta
+            sección para conocer nuestros próximos cursos y charlas en vivo.
+          </p>
+
+          <div class="proximo-evento-card">
+            <h2>¡Pronto más novedades!</h2>
+            <p>
+              Estamos trabajando para preparar nuevos eventos y talleres. Si
+              deseas recibir noticias, revisa nuestra sección de
+              <a href="cursos.html">cursos</a> o nuestro canal de
+              <a
+                href="https://www.youtube.com/channel/UC3Hepnp1iAuiELS5kDGrReQ"
+                target="_blank"
+                >YouTube</a
+              >.
+            </p>
+          </div>
+        </main>
+      </div>
+
+      <!-- Footer -->
+      <footer class="footer-improved">
         <div class="container">
           <div class="row">
             <div class="col-md-6">
@@ -100,14 +117,14 @@
                   ><img
                     class="logo_gs_fin"
                     src="images/logo_final.svg"
-                    alt="Logo de tu empresa"
+                    alt="Logo GeoStyle"
                 /></a>
               </div>
             </div>
           </div>
         </div>
       </footer>
-      <!-- Termina el footer -->
+      <!-- Fin del footer -->
     </div>
   </body>
 </html>

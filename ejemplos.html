@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ejemplos de lo que aprenderás</title>
+
+    <!-- Preloads y fuentes -->
     <link rel="preload" href="css/normalize.css" as="style" />
     <link rel="stylesheet" href="css/normalize.css" />
     <script
@@ -13,32 +15,29 @@
       crossorigin="anonymous"
     ></script>
     <link rel="icon" href="images/logo_gs_v2.png" type="image/png" />
+
+    <!-- Estilos principales -->
     <link rel="preload" href="css/style.css" as="style" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="nav-bg">
-      <!-- Empieza el menu -->
-      <a href="index.html"
-        ><img class="logo" src="images/logo_final.svg" alt="logo geostyle"
-      /></a>
+    <!-- Barra de navegación (header) -->
+    <header class="nav-bg">
+      <a href="index.html">
+        <img class="logo" src="images/logo_final.svg" alt="logo geostyle" />
+      </a>
       <nav class="navegacion-principal contenedor">
         <div class="menu-icon">
           <i class="fas fa-bars"></i>
         </div>
         <ul class="menu">
-          <li>
-            <a href="index.html">Inicio</a>
-          </li>
-          <li>
-            <a href="consultorias.html"> Consultorías</a>
-          </li>
+          <li><a href="index.html">Inicio</a></li>
           <li class="submenu">
             <a href="#" id="desplegarMenu1">
-              Cursos <span class="flecha"></span
-            ></a>
+              Cursos <span class="flecha"></span>
+            </a>
             <ul class="opciones">
-              <li><a href="cursos.html"> Catálogo</a></li>
+              <li><a href="cursos.html">Catálogo</a></li>
               <li><a href="ejemplos.html">Ejemplos</a></li>
               <li><a href="metodologia.html">Metodología</a></li>
               <li><a href="opiniones.html">Opiniones</a></li>
@@ -46,145 +45,211 @@
           </li>
           <li class="submenu">
             <a href="#" id="desplegarMenu2">
-              Eventos<span class="flecha"></span
-            ></a>
+              Eventos <span class="flecha"></span>
+            </a>
             <ul class="opciones">
               <li><a href="proximos.html">Próximos</a></li>
               <li><a href="eventos.html">Anteriores</a></li>
             </ul>
           </li>
-          <li>
-            <a href="apps.html">Apps</a>
-          </li>
-          <li>
-            <a href="about.html"> Sobre GeoStyle</a>
-          </li>
-          <li>
-            <a href="contacto.html"> Contacto</a>
-          </li>
+          <li><a href="apps.html">Apps</a></li>
+          <li><a href="consultorias.html">Consultorías</a></li>
+          <li><a href="about.html">Sobre GeoStyle</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
         </ul>
       </nav>
-      <script src="script.js"></script>
-    </div>
-    <!-- Termina el menu -->
+    </header>
+    <script src="script.js"></script>
 
-    <h1>Ejemplos de lo que aprénderas en los cursos</h1>
+    <main>
+      <h1>Ejemplos de lo que aprenderás en los cursos</h1>
+      <p class="texto-intro-ejemplos">
+        A continuación se muestran algunos ejemplos que podrás elaborar tras
+        completar nuestros cursos de SIG, Teledetección, Ecología del Paisaje,
+        etc. Hemos agrandado el carrusel y equilibrado el espacio de las flechas
+        para que luzca mejor.
+      </p>
 
-    <br />
+      <!-- INICIO DEL CARRUSEL (FADE) -->
+      <section class="carousel-fade-container">
+        <!-- Radio inputs para cada slide (7 en este ejemplo) -->
+        <input type="radio" name="slidefade" id="slide1" checked />
+        <input type="radio" name="slidefade" id="slide2" />
+        <input type="radio" name="slidefade" id="slide3" />
+        <input type="radio" name="slidefade" id="slide4" />
+        <input type="radio" name="slidefade" id="slide5" />
+        <input type="radio" name="slidefade" id="slide6" />
+        <input type="radio" name="slidefade" id="slide7" />
 
-    <h3>Serie de tiempo índice NDVI</h3>
+        <!-- Contenedor de las slides -->
+        <div class="fade-slides">
+          <!-- Slide 1 -->
+          <div class="fade-slide fade-slide1">
+            <img src="images/mapita-01.png" alt="Mapa NDVI" />
+            <h3>Serie de tiempo índice NDVI</h3>
+            <p><strong>Curso:</strong> Mapas Web y Mapas Temáticos con R</p>
+          </div>
 
-    <p>Curso: Mapas Web y Mapas Temáticos con R</p>
+          <!-- Slide 2 -->
+          <div class="fade-slide fade-slide2">
+            <img
+              src="images/modis-ndvi-time-series-animation.gif"
+              alt="Animación NDVI África"
+            />
+            <h3>Animación NDVI África</h3>
+            <p>
+              <strong>Curso:</strong> Google Earth Engine y Machine Learning
+            </p>
+          </div>
 
-    <br />
+          <!-- Slide 3 -->
+          <div class="fade-slide fade-slide3">
+            <img src="images/mapa_uruguay.png" alt="Mapa Uruguay" />
+            <h3>Mapa Uruguay</h3>
+            <p><strong>Curso:</strong> Mapas Web y Mapas Temáticos con R</p>
+          </div>
 
-    <img class="img-ejemplo" src="images/mapita-01.png" />
-    <br />
-    <br />
+          <!-- Slide 4 -->
+          <div class="fade-slide fade-slide4">
+            <img
+              src="images/NDVI_ts.png"
+              alt="NDVI para diferentes coberturas"
+            />
+            <h3>Serie de tiempo NDVI</h3>
+            <p><strong>Curso:</strong> SIG y Teledetección en R (Intermedio)</p>
+          </div>
 
-    <h3>Animación NDVI África</h3>
+          <!-- Slide 5 -->
+          <div class="fade-slide fade-slide5">
+            <img
+              src="images/map_colors.png"
+              alt="NDVI con diferentes paletas"
+            />
+            <h3>Índice NDVI con diferentes paletas de colores</h3>
+            <p><strong>Curso:</strong> Mapas Web y Mapas Temáticos con R</p>
+          </div>
 
-    <p>Curso: Google Earth Engine y Machine Learning</p>
+          <!-- Slide 6 -->
+          <div class="fade-slide fade-slide6">
+            <img src="images/mapa_final.png" alt="Mapa Parque Conguillío" />
+            <h3>Mapa Parque Nacional Conguillío</h3>
+            <p><strong>Curso:</strong> Mapas Web y Mapas Temáticos con R</p>
+          </div>
 
-    <br />
-    <img
-      class="img-ejemplo"
-      src="images/modis-ndvi-time-series-animation.gif"
-    />
-    <br />
-    <br />
-
-    <h3>Mapa Uruguay</h3>
-
-    <p>Curso: Mapas Web y Mapas Temáticos con R</p>
-
-    <br />
-
-    <img class="img-ejemplo" src="images/mapa_uruguay.png" />
-    <br />
-    <br />
-
-    <h3>Serie de tiempo NDVI para diferentes coberturas</h3>
-
-    <p>Curso: SIG y Teledetección en R (Intermedio)</p>
-
-    <br />
-
-    <img class="img-ejemplo" src="images/NDVI_ts.png" />
-    <br />
-    <br />
-
-    <h3>Índice NDVI con diferentes paletas de colores</h3>
-
-    <p>Curso: Mapas Web y Mapas Temáticos con R</p>
-
-    <br />
-
-    <img class="img-ejemplo" src="images/map_colors.png" />
-    <br />
-    <br />
-
-    <h3>Mapa Parque Nacional Conguillío</h3>
-
-    <p>Curso: Mapas Web y Mapas Temáticos con R</p>
-
-    <br />
-
-    <img class="img-ejemplo" src="images/mapa_final.png" />
-    <br />
-    <br />
-
-    <h3>
-      Cambio de la superficie de distintas clases de uso y cobertura de suelo
-    </h3>
-
-    <p>Curso: Introducción a Ecología del Paisaje en R</p>
-
-    <br />
-
-    <img class="img-ejemplo" src="images/plot_lulc.png" />
-
-    <br />
-    <br />
-
-    <a href="cursos.html">Catálogo de los cursos</a>
-
-    <br />
-
-    <br />
-  </body>
-  <!-- Empieza el footer -->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <ul class="footer-links">
-            <li>
-              <a href="mailto:ajsalazar@uc.cl"
-                ><i class="far fa-envelope"></i> ajsalazar@uc.cl</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.youtube.com/channel/UC3Hepnp1iAuiELS5kDGrReQ"
-                target="_blank"
-                ><i class="fab fa-youtube"></i> YouTube</a
-              >
-            </li>
-          </ul>
+          <!-- Slide 7 -->
+          <div class="fade-slide fade-slide7">
+            <img
+              src="images/plot_lulc.png"
+              alt="Cambio uso y cobertura de suelo"
+            />
+            <h3>
+              Cambio de la superficie de distintas clases de uso y cobertura de
+              suelo
+            </h3>
+            <p>
+              <strong>Curso:</strong> Introducción a Ecología del Paisaje en R
+            </p>
+          </div>
         </div>
-        <div class="col-md-6">
-          <div class="logo_footer">
-            <a href="index.html"
-              ><img
-                class="logo_gs_fin"
-                src="images/logo_final.svg"
-                alt="Logo de tu empresa"
-            /></a>
+
+        <!-- Flechas de navegación -->
+        <div class="fade-navigation">
+          <label for="slide1" class="nav-fade" id="prev1">&#10094;</label>
+          <label for="slide2" class="nav-fade" id="next1">&#10095;</label>
+
+          <label for="slide2" class="nav-fade" id="prev2">&#10094;</label>
+          <label for="slide3" class="nav-fade" id="next2">&#10095;</label>
+
+          <label for="slide3" class="nav-fade" id="prev3">&#10094;</label>
+          <label for="slide4" class="nav-fade" id="next3">&#10095;</label>
+
+          <label for="slide4" class="nav-fade" id="prev4">&#10094;</label>
+          <label for="slide5" class="nav-fade" id="next4">&#10095;</label>
+
+          <label for="slide5" class="nav-fade" id="prev5">&#10094;</label>
+          <label for="slide6" class="nav-fade" id="next5">&#10095;</label>
+
+          <label for="slide6" class="nav-fade" id="prev6">&#10094;</label>
+          <label for="slide7" class="nav-fade" id="next6">&#10095;</label>
+
+          <label for="slide7" class="nav-fade" id="prev7">&#10094;</label>
+          <label for="slide1" class="nav-fade" id="next7">&#10095;</label>
+        </div>
+
+        <!-- Puntos de paginación (dot) -->
+        <div class="fade-pagination">
+          <label for="slide1" class="dotfade"></label>
+          <label for="slide2" class="dotfade"></label>
+          <label for="slide3" class="dotfade"></label>
+          <label for="slide4" class="dotfade"></label>
+          <label for="slide5" class="dotfade"></label>
+          <label for="slide6" class="dotfade"></label>
+          <label for="slide7" class="dotfade"></label>
+        </div>
+      </section>
+      <!-- FIN DEL CARRUSEL -->
+
+      <!-- Enlace al Catálogo -->
+      <div class="link-catalogo">
+        <a href="cursos.html">Catálogo de los cursos</a>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-improved">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <ul class="footer-links">
+              <li>
+                <a href="mailto:ajsalazar@uc.cl"
+                  ><i class="far fa-envelope"></i> ajsalazar@uc.cl</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/channel/UC3Hepnp1iAuiELS5kDGrReQ"
+                  target="_blank"
+                  ><i class="fab fa-youtube"></i> YouTube</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <div class="logo_footer">
+              <a href="index.html"
+                ><img
+                  class="logo_gs_fin"
+                  src="images/logo_final.svg"
+                  alt="Logo de tu empresa"
+              /></a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
-  <!-- Termina el footer -->
+    </footer>
+
+    <!-- Script para auto-play (opcional, si lo quieres) -->
+    <script>
+      const slides = [
+        "slide1",
+        "slide2",
+        "slide3",
+        "slide4",
+        "slide5",
+        "slide6",
+        "slide7",
+      ];
+      let currentIndex = 0;
+
+      function autoPlay() {
+        document.getElementById(slides[currentIndex]).checked = false;
+        currentIndex = (currentIndex + 1) % slides.length;
+        document.getElementById(slides[currentIndex]).checked = true;
+      }
+
+      // Cambia de imagen cada 5 segundos
+      setInterval(autoPlay, 5000);
+    </script>
+  </body>
 </html>

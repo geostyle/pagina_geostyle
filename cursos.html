@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cursos</title>
+
+    <!-- Preloads y fuentes -->
     <link rel="preload" href="css/normalize.css" as="style" />
     <link rel="stylesheet" href="css/normalize.css" />
     <script
@@ -17,28 +19,23 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="nav-bg">
-      <!-- Empieza el menu -->
-      <a href="index.html"
-        ><img class="logo" src="images/logo_final.svg" alt="logo geostyle"
-      /></a>
+    <!-- Encabezado (header) con el menú -->
+    <header class="nav-bg">
+      <a href="index.html">
+        <img class="logo" src="images/logo_final.svg" alt="logo geostyle" />
+      </a>
       <nav class="navegacion-principal contenedor">
         <div class="menu-icon">
           <i class="fas fa-bars"></i>
         </div>
         <ul class="menu">
-          <li>
-            <a href="index.html">Inicio</a>
-          </li>
-          <li>
-            <a href="consultorias.html"> Consultorías</a>
-          </li>
+          <li><a href="index.html">Inicio</a></li>
           <li class="submenu">
             <a href="#" id="desplegarMenu1">
-              Cursos <span class="flecha"></span
-            ></a>
+              Cursos <span class="flecha"></span>
+            </a>
             <ul class="opciones">
-              <li><a href="cursos.html"> Catálogo</a></li>
+              <li><a href="cursos.html">Catálogo</a></li>
               <li><a href="ejemplos.html">Ejemplos</a></li>
               <li><a href="metodologia.html">Metodología</a></li>
               <li><a href="opiniones.html">Opiniones</a></li>
@@ -46,378 +43,325 @@
           </li>
           <li class="submenu">
             <a href="#" id="desplegarMenu2">
-              Eventos<span class="flecha"></span
-            ></a>
+              Eventos <span class="flecha"></span>
+            </a>
             <ul class="opciones">
               <li><a href="proximos.html">Próximos</a></li>
               <li><a href="eventos.html">Anteriores</a></li>
             </ul>
           </li>
-          <li>
-            <a href="apps.html">Apps</a>
-          </li>
-          <li>
-            <a href="about.html"> Sobre GeoStyle</a>
-          </li>
-          <li>
-            <a href="contacto.html"> Contacto</a>
-          </li>
+          <li><a href="apps.html">Apps</a></li>
+          <li><a href="consultorias.html">Consultorías</a></li>
+          <li><a href="about.html">Sobre GeoStyle</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
         </ul>
       </nav>
-      <script src="script.js"></script>
-    </div>
-    <!-- Termina el menu -->
-    <h1>Cursos Online (Asincrónicos)</h1>
-    <br />
+    </header>
 
-    <p class="texto-intro-cursos">
-      Estos cursos se encuentran en la plataforma Udemy. Son videos grabados,
-      por lo tanto, tienen una metodología flexible que te permitirá avanzar
-      cuando más te acomode. Los cursos contienen ejercicios para practicar lo
-      aprendido y una vez que te inscribes, tienes acceso para siempre a ellos.
-      <br />
-      <br />
-      El precio de estos cursos va desde los 19.99 hasta los 29.99 USD (el
-      precio puede ser menor, ya que a veces hay ofertas en Udemy). <br /><br />
-      Además, puedes acceder al total pack por 70 USD. Con esto tendrás acceso a
-      mis 8 cursos en español de por vida! Para solicitar el total pack tienes
-      que mandar un mail a ajsalazar@uc.cl, indicando tu país de residencia.
-      <br /><br />
-      Más de 4.000 personas ya se han inscrito a los cursos. Qué estás esperando
-      para inscribirte!
-    </p>
-    <br />
-    <a href="ejemplos.html" target="_blank" rel="noopener noreferrer">
-      Ejemplos de lo que aprenderás en los cursos
-    </a>
-    <br />
-    <a href="opiniones.html" target="_blank" rel="noopener noreferrer">
-      Opiniones de los cursos
-    </a>
-    <br />
-    <a href="metodologia.html" target="_blank" rel="noopener noreferrer">
-      Más detalles de la metodología de los cursos
-    </a>
-    <br />
-    <br />
-    <p>
-      Para conocer más detalles sobre los contenidos y para inscribirte en los
-      cursos, da click en su nombre
-    </p>
-    <hr />
-    <!-- Empieza curso 1 -->
-    <h2>
-      <a
-        href="https://www.udemy.com/course/introduccion-a-sig-y-teledeteccion-en-r/?referralCode=1B01AA9589CE530EC41A"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Introducción a SIG y Teledetección en R
-      </a>
-    </h2>
-    <div class="contenedor-principal">
-      <div class="contenedor-imagen-texto">
-        <a
-          href="https://www.udemy.com/course/introduccion-a-sig-y-teledeteccion-en-r/?referralCode=1B01AA9589CE530EC41A"
-          target="_blank"
-          rel="noopener noreferrer"
+    <!-- Contenido principal -->
+    <main>
+      <h1>Cursos Online (Asincrónicos)</h1>
+      <p class="texto-intro-cursos">
+        Estos cursos se encuentran en la plataforma Udemy. Son videos grabados,
+        por lo tanto, tienen una metodología flexible que te permitirá avanzar
+        cuando más te acomode. Los cursos contienen ejercicios para practicar lo
+        aprendido y, una vez que te inscribes, tienes acceso para siempre a
+        ellos.
+        <br /><br />
+        El precio de estos cursos va desde los 19.99 hasta los 29.99 USD (el
+        precio puede ser menor, ya que a veces hay ofertas en Udemy).
+        <br /><br />
+        Además, puedes acceder al <b>total pack</b> por 70 USD. Con esto tendrás
+        acceso a mis 8 cursos en español de por vida. Para solicitar el total
+        pack, envía un mail a
+        <a href="mailto:ajsalazar@uc.cl">ajsalazar@uc.cl</a>, indicando tu país
+        de residencia. <br /><br />
+        Más de 4.000 personas ya se han inscrito a los cursos.
+        <strong>¡Qué estás esperando para inscribirte!</strong>
+      </p>
+
+      <div class="enlaces-cursos">
+        <a href="ejemplos.html" target="_blank" rel="noopener noreferrer"
+          >Ejemplos de lo que aprenderás en los cursos</a
         >
-          <img class="img-curso" src="images/cr1.png" />
-        </a>
-        <div class="texto-derecha">
-          <h3>Qué aprenderás:</h3>
-          <ul>
-            <li>Introducción a la programación en R</li>
-            <li>Procesamiento y análisis de archivos Shapefile</li>
-            <li>Procesamiento y análisis de archivos Raster</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <hr />
-    <!-- Termina el curso 1 -->
-    <!-- Empieza curso 2 -->
-    <h2>
-      <a
-        href="https://www.udemy.com/course/google-earth-engine-y-machine-learning/?referralCode=56C649FF16E5DACD42E2"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Google Earth Engine y Machine Learning
-      </a>
-    </h2>
-    <div class="contenedor-principal">
-      <div class="contenedor-imagen-texto">
-        <a
-          href="https://www.udemy.com/course/google-earth-engine-y-machine-learning/?referralCode=56C649FF16E5DACD42E2"
-          target="_blank"
-          rel="noopener noreferrer"
+        <a href="opiniones.html" target="_blank" rel="noopener noreferrer"
+          >Opiniones de los cursos</a
         >
-          <img class="img-curso" src="images/logo.png" />
-        </a>
-        <div class="texto-derecha">
-          <h3>Qué aprenderás:</h3>
-          <ul>
-            <li>Introducción a la programación en JavaScript</li>
-            <li>Análisis de imágenes satelitales</li>
-            <li>Cálculo de índices espectrales</li>
-            <li>Clasificaciones supervisadas y no supervisadas</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <hr />
-    <!-- Termina el curso 2 -->
-    <!-- Empieza curso 3 -->
-    <h2>
-      <a
-        href="https://www.udemy.com/course/introduccion-a-sig-y-teledeteccion-en-python/?referralCode=FA603AF82DCB71867A29"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Introducción a SIG y Teledetección en Python
-      </a>
-    </h2>
-    <div class="contenedor-principal">
-      <div class="contenedor-imagen-texto">
-        <a
-          href="https://www.udemy.com/course/introduccion-a-sig-y-teledeteccion-en-python/?referralCode=FA603AF82DCB71867A29"
-          target="_blank"
-          rel="noopener noreferrer"
+        <a href="metodologia.html" target="_blank" rel="noopener noreferrer"
+          >Metodología de los cursos</a
         >
-          <img class="img-curso" src="images/cp1.png" />
-        </a>
-        <div class="texto-derecha">
-          <h3>Qué aprenderás:</h3>
-          <ul>
-            <li>Introducción a la programación en Python</li>
-            <li>Procesamiento y análisis de archivos Shapefile</li>
-            <li>Procesamiento y análisis de archivos Raster</li>
-          </ul>
-        </div>
       </div>
-    </div>
-    <hr />
-    <!-- Termina el curso 3 -->
-    <!-- Empieza curso 4 -->
-    <h2>
-      <a
-        href="https://www.udemy.com/course/sig-y-teledeteccion-en-r-intermedio/?referralCode=E8B08010A13D46668014"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        SIG y Teledetección en R (Intermedio)
-      </a>
-    </h2>
-    <div class="contenedor-principal">
-      <div class="contenedor-imagen-texto">
-        <a
-          href="https://www.udemy.com/course/sig-y-teledeteccion-en-r-intermedio/?referralCode=E8B08010A13D46668014"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img class="img-curso" src="images/cr2.png" />
-        </a>
-        <div class="texto-derecha">
-          <h3>Qué aprenderás:</h3>
-          <ul>
-            <li>Procesamiento de archivos vectoriales-shapefile</li>
-            <li>Procesamiento de archivos raster</li>
-            <li>Conectar Google Earth Engine con R</li>
-          </ul>
+
+      <p class="texto-intro-cursos">
+        Para conocer más detalles sobre los contenidos y para inscribirte en los
+        cursos, da clic en el botón correspondiente a cada uno.
+      </p>
+
+      <!-- Sección de cursos en tarjetas (cards) -->
+      <section class="courses-grid">
+        <!-- Tarjeta de curso 1 -->
+        <div class="course-card">
+          <img
+            src="images/cr1.png"
+            alt="Curso R básico"
+            class="course-card-img"
+          />
+          <div class="course-card-content">
+            <h3>Introducción a SIG y Teledetección en R</h3>
+            <p>Qué aprenderás:</p>
+            <ul>
+              <li>Introducción a la programación en R</li>
+              <li>Procesamiento y análisis de archivos Shapefile</li>
+              <li>Procesamiento y análisis de archivos Raster</li>
+            </ul>
+            <a
+              class="btn-curso"
+              href="https://www.udemy.com/course/introduccion-a-sig-y-teledeteccion-en-r/?referralCode=1B01AA9589CE530EC41A"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ver curso
+            </a>
+          </div>
         </div>
-      </div>
-    </div>
-    <hr />
-    <!-- Termina el curso 4 -->
-    <!-- Empieza curso 5 -->
-    <h2>
-      <a
-        href="https://www.udemy.com/course/mapas-profesionales-e-interactivos-con-r-ggplot2-y-leaflet/?referralCode=447FB1C5FBAFFE084CEC"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Mapas Web y Mapas Temáticos con R
-      </a>
-    </h2>
-    <div class="contenedor-principal">
-      <div class="contenedor-imagen-texto">
-        <a
-          href="https://www.udemy.com/course/mapas-profesionales-e-interactivos-con-r-ggplot2-y-leaflet/?referralCode=447FB1C5FBAFFE084CEC"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img class="img-curso" src="images/cmr.png" />
-        </a>
-        <div class="texto-derecha">
-          <h3>Qué aprenderás:</h3>
-          <ul>
-            <li>Introducción a la programación en R</li>
-            <li>Realizar mapas temáticos con "ggplot2"</li>
-            <li>Realizar mapas web interactivos con "Leaflet"</li>
-          </ul>
+
+        <!-- Tarjeta de curso 2 -->
+        <div class="course-card">
+          <!-- Se ha normalizado el tamaño a un formato horizontal para que se vea similar -->
+          <img
+            src="images/logo.png"
+            alt="Google Earth Engine"
+            class="course-card-img"
+          />
+          <div class="course-card-content">
+            <h3>Google Earth Engine y Machine Learning</h3>
+            <p>Qué aprenderás:</p>
+            <ul>
+              <li>Análisis de imágenes satelitales</li>
+              <li>Cálculo de índices espectrales</li>
+              <li>Clasificaciones supervisadas y no supervisadas</li>
+            </ul>
+            <a
+              class="btn-curso"
+              href="https://www.udemy.com/course/google-earth-engine-y-machine-learning/?referralCode=56C649FF16E5DACD42E2"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ver curso
+            </a>
+          </div>
         </div>
-      </div>
-    </div>
-    <hr />
-    <!-- Termina el curso 5 -->
-    <!-- Empieza curso 6 -->
-    <h2>
-      <a
-        href="https://www.udemy.com/course/introduccion-a-ecologia-del-paisaje-en-r/?referralCode=2486BE25C1BB4224A397"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Introducción a Ecología del Paisaje en R
-      </a>
-    </h2>
-    <div class="contenedor-principal">
-      <div class="contenedor-imagen-texto">
-        <a
-          href="https://www.udemy.com/course/introduccion-a-ecologia-del-paisaje-en-r/?referralCode=2486BE25C1BB4224A397"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img class="img-curso" src="images/cep.png" />
-        </a>
-        <div class="texto-derecha">
-          <h3>Qué aprenderás:</h3>
-          <ul>
-            <li>Introducción a la programación en R</li>
-            <li>Cálculo de métricas de paisaje</li>
-            <li>Cálculo de índices de conectividad funcional</li>
-          </ul>
+
+        <!-- Tarjeta de curso 3 -->
+        <div class="course-card">
+          <img
+            src="images/cp1.png"
+            alt="Curso Python"
+            class="course-card-img"
+          />
+          <div class="course-card-content">
+            <h3>Introducción a SIG y Teledetección en Python</h3>
+            <p>Qué aprenderás:</p>
+            <ul>
+              <li>Introducción a la programación en Python</li>
+              <li>Procesamiento y análisis de archivos Shapefile</li>
+              <li>Procesamiento y análisis de archivos Raster</li>
+            </ul>
+            <a
+              class="btn-curso"
+              href="https://www.udemy.com/course/introduccion-a-sig-y-teledeteccion-en-python/?referralCode=FA603AF82DCB71867A29"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ver curso
+            </a>
+          </div>
         </div>
-      </div>
-    </div>
-    <hr />
-    <!-- Termina el curso 6 -->
-    <!-- Empieza curso 7 -->
-    <h2>
-      <a
-        href="https://www.udemy.com/course/introduccion-a-shinyapps-en-r-crea-aplicaciones-web/?referralCode=23156BE0D117658AD027"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Introducción a ShinyApps en R: crea aplicaciones web!
-      </a>
-    </h2>
-    <div class="contenedor-principal">
-      <div class="contenedor-imagen-texto">
-        <a
-          href="https://www.udemy.com/course/introduccion-a-shinyapps-en-r-crea-aplicaciones-web/?referralCode=23156BE0D117658AD027"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img class="img-curso" src="images/shiny.png" />
-        </a>
-        <div class="texto-derecha">
-          <h3>Qué aprenderás:</h3>
-          <ul>
-            <li>Introducción a la programación en R</li>
-            <li>Funciones avanzadas con Tidyverse</li>
-            <li>Crear aplicaciones web con el paquete Shiny</li>
-          </ul>
+
+        <!-- Tarjeta de curso 4 -->
+        <div class="course-card">
+          <img
+            src="images/cr2.png"
+            alt="R Intermedio"
+            class="course-card-img"
+          />
+          <div class="course-card-content">
+            <h3>SIG y Teledetección en R (Intermedio)</h3>
+            <p>Qué aprenderás:</p>
+            <ul>
+              <li>Procesamiento de archivos vectoriales (shapefile)</li>
+              <li>Procesamiento de archivos raster</li>
+              <li>Conectar Google Earth Engine con R</li>
+            </ul>
+            <a
+              class="btn-curso"
+              href="https://www.udemy.com/course/sig-y-teledeteccion-en-r-intermedio/?referralCode=E8B08010A13D46668014"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ver curso
+            </a>
+          </div>
         </div>
-      </div>
-    </div>
-    <hr />
-    <!-- Termina el curso 7 -->
-    <!-- Empieza curso 8 -->
-    <h2>
-      <a
-        href="https://www.udemy.com/course/introduccion-a-r-gratis/?referralCode=36D0BFEDBFB3B24AB3A2"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Introducción a la Programación en R para Principiantes
-      </a>
-    </h2>
-    <div class="contenedor-principal">
-      <div class="contenedor-imagen-texto">
-        <a
-          href="https://www.udemy.com/course/introduccion-a-r-gratis/?referralCode=36D0BFEDBFB3B24AB3A2"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img class="img-curso" src="images/intro_r.png" />
-        </a>
-        <div class="texto-derecha">
-          <h3>Qué aprenderás:</h3>
-          <ul>
-            <li>Introducción a la programación con R</li>
-            <li>Funciones avanzadas con el paquete Tidyverse</li>
-          </ul>
+
+        <!-- Tarjeta de curso 5 -->
+        <div class="course-card">
+          <img src="images/cmr.png" alt="Mapas en R" class="course-card-img" />
+          <div class="course-card-content">
+            <h3>Mapas Web y Mapas Temáticos con R</h3>
+            <p>Qué aprenderás:</p>
+            <ul>
+              <li>Introducción a la programación en R</li>
+              <li>Crear mapas temáticos con "ggplot2"</li>
+              <li>Crear mapas web con "Leaflet"</li>
+            </ul>
+            <a
+              class="btn-curso"
+              href="https://www.udemy.com/course/mapas-profesionales-e-interactivos-con-r-ggplot2-y-leaflet/?referralCode=447FB1C5FBAFFE084CEC"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ver curso
+            </a>
+          </div>
         </div>
-      </div>
-    </div>
-    <hr />
-    <!-- Termina el curso 8 -->
-    <!-- Empieza curso 9 -->
-    <h2>
-      <a
-        href="https://www.udemy.com/course/introduction-to-gis-and-remote-sensing-with-r/?referralCode=B60C87ED87E7618E1C78"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Introduction to GIS and Remote Sensing with R
-      </a>
-    </h2>
-    <div class="contenedor-principal">
-      <div class="contenedor-imagen-texto">
-        <a
-          href="https://www.udemy.com/course/introduction-to-gis-and-remote-sensing-with-r/?referralCode=B60C87ED87E7618E1C78"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img class="img-curso" src="images/cr3.png" />
-        </a>
-        <div class="texto-derecha">
-          <h3>What you will learn:</h3>
-          <ul>
-            <li>Introduction to spatial analysis with R language</li>
-            <li>Raster processing</li>
-            <li>Vector processing</li>
-          </ul>
+
+        <!-- Tarjeta de curso 6 -->
+        <div class="course-card">
+          <img
+            src="images/cep.png"
+            alt="Ecología del Paisaje"
+            class="course-card-img"
+          />
+          <div class="course-card-content">
+            <h3>Introducción a Ecología del Paisaje en R</h3>
+            <p>Qué aprenderás:</p>
+            <ul>
+              <li>Introducción a la programación en R</li>
+              <li>Cálculo de métricas de paisaje</li>
+              <li>Cálculo de índices de conectividad funcional</li>
+            </ul>
+            <a
+              class="btn-curso"
+              href="https://www.udemy.com/course/introduccion-a-ecologia-del-paisaje-en-r/?referralCode=2486BE25C1BB4224A397"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ver curso
+            </a>
+          </div>
         </div>
-      </div>
-    </div>
-    <!-- Termina el curso 9 -->
-    <br />
-    <br />
-  </body>
-  <!-- Empieza el footer -->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <ul class="footer-links">
-            <li>
-              <a href="mailto:ajsalazar@uc.cl"
-                ><i class="far fa-envelope"></i> ajsalazar@uc.cl</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.youtube.com/channel/UC3Hepnp1iAuiELS5kDGrReQ"
-                target="_blank"
-                ><i class="fab fa-youtube"></i> YouTube</a
-              >
-            </li>
-          </ul>
+
+        <!-- Tarjeta de curso 7 -->
+        <div class="course-card">
+          <img src="images/shiny.png" alt="ShinyApps" class="course-card-img" />
+          <div class="course-card-content">
+            <h3>Introducción a ShinyApps en R</h3>
+            <p>Qué aprenderás:</p>
+            <ul>
+              <li>Introducción a la programación en R</li>
+              <li>Funciones avanzadas con Tidyverse</li>
+              <li>Crear aplicaciones web con Shiny</li>
+            </ul>
+            <a
+              class="btn-curso"
+              href="https://www.udemy.com/course/introduccion-a-shinyapps-en-r-crea-aplicaciones-web/?referralCode=23156BE0D117658AD027"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ver curso
+            </a>
+          </div>
         </div>
-        <div class="col-md-6">
-          <div class="logo_footer">
-            <a href="index.html"
-              ><img
-                class="logo_gs_fin"
-                src="images/logo_final.svg"
-                alt="Logo de tu empresa"
-            /></a>
+
+        <!-- Tarjeta de curso 8 -->
+        <div class="course-card">
+          <img
+            src="images/intro_r.png"
+            alt="R Principiantes"
+            class="course-card-img"
+          />
+          <div class="course-card-content">
+            <h3>Introducción a la Programación en R (Principiantes)</h3>
+            <p>Qué aprenderás:</p>
+            <ul>
+              <li>Introducción a la programación con R</li>
+              <li>Funciones avanzadas con Tidyverse</li>
+            </ul>
+            <a
+              class="btn-curso"
+              href="https://www.udemy.com/course/introduccion-a-r-gratis/?referralCode=36D0BFEDBFB3B24AB3A2"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ver curso
+            </a>
+          </div>
+        </div>
+
+        <!-- Tarjeta de curso 9 -->
+        <div class="course-card">
+          <img
+            src="images/cr3.png"
+            alt="Curso en inglés"
+            class="course-card-img"
+          />
+          <div class="course-card-content">
+            <h3>Introduction to GIS and Remote Sensing with R</h3>
+            <p>What you will learn:</p>
+            <ul>
+              <li>Introduction to spatial analysis with R language</li>
+              <li>Raster and vector processing</li>
+            </ul>
+            <a
+              class="btn-curso"
+              href="https://www.udemy.com/course/introduction-to-gis-and-remote-sensing-with-r/?referralCode=B60C87ED87E7618E1C78"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              See course
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- Fin sección de cursos -->
+    </main>
+
+    <!-- Pie de página (footer) -->
+    <footer class="footer-improved">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <ul class="footer-links">
+              <li>
+                <a href="mailto:ajsalazar@uc.cl"
+                  ><i class="far fa-envelope"></i> ajsalazar@uc.cl</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/channel/UC3Hepnp1iAuiELS5kDGrReQ"
+                  target="_blank"
+                  ><i class="fab fa-youtube"></i> YouTube</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <div class="logo_footer">
+              <a href="index.html"
+                ><img
+                  class="logo_gs_fin"
+                  src="images/logo_final.svg"
+                  alt="Logo de GeoStyle"
+              /></a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
-  <!-- Termina el footer -->
+    </footer>
+
+    <!-- Script del menú -->
+    <script src="script.js"></script>
+  </body>
 </html>

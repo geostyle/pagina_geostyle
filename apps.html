@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contacto</title>
+    <title>Apps | GeoStyle</title>
+
+    <!-- Preloads y fuentes -->
     <link rel="preload" href="css/normalize.css" as="style" />
     <link rel="stylesheet" href="css/normalize.css" />
     <script
@@ -13,77 +15,75 @@
       crossorigin="anonymous"
     ></script>
     <link rel="icon" href="images/logo_gs_v2.png" type="image/png" />
+
+    <!-- Estilos principales -->
     <link rel="preload" href="css/style.css" as="style" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <!-- Contenedor principal para forzar el footer al final -->
     <div class="page-container">
-      <div class="content-wrap">
-        <div class="nav-bg">
-          <!-- Empieza el menu -->
-          <a href="index.html"
-            ><img class="logo" src="images/logo_final.svg" alt="logo geostyle"
-          /></a>
-          <nav class="navegacion-principal contenedor">
-            <div class="menu-icon">
-              <i class="fas fa-bars"></i>
-            </div>
-            <ul class="menu">
-              <li>
-                <a href="index.html">Inicio</a>
-              </li>
-              <li>
-                <a href="consultorias.html"> Consultorías</a>
-              </li>
-              <li class="submenu">
-                <a href="#" id="desplegarMenu1">
-                  Cursos <span class="flecha"></span
-                ></a>
-                <ul class="opciones">
-                  <li><a href="cursos.html"> Catálogo</a></li>
-                  <li><a href="ejemplos.html">Ejemplos</a></li>
-                  <li><a href="metodologia.html">Metodología</a></li>
-                  <li><a href="opiniones.html">Opiniones</a></li>
-                </ul>
-              </li>
-              <li class="submenu">
-                <a href="#" id="desplegarMenu2">
-                  Eventos<span class="flecha"></span
-                ></a>
-                <ul class="opciones">
-                  <li><a href="proximos.html">Próximos</a></li>
-                  <li><a href="eventos.html">Anteriores</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="apps.html">Apps</a>
-              </li>
-              <li>
-                <a href="about.html"> Sobre GeoStyle</a>
-              </li>
-              <li>
-                <a href="contacto.html"> Contacto</a>
-              </li>
-            </ul>
-          </nav>
-          <script src="script.js"></script>
-        </div>
-        <!-- Termina el menu -->
-        <h1>Apps</h1>
-        <br />
-        <p>Las aplicaciones ahora están disponibles en el siguiente link:</p>
+      <!-- Barra de navegación (header) -->
+      <header class="nav-bg">
+        <a href="index.html">
+          <img class="logo" src="images/logo_final.svg" alt="logo geostyle" />
+        </a>
+        <nav class="navegacion-principal contenedor">
+          <div class="menu-icon">
+            <i class="fas fa-bars"></i>
+          </div>
+          <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li class="submenu">
+              <a href="#" id="desplegarMenu1">
+                Cursos <span class="flecha"></span>
+              </a>
+              <ul class="opciones">
+                <li><a href="cursos.html">Catálogo</a></li>
+                <li><a href="ejemplos.html">Ejemplos</a></li>
+                <li><a href="metodologia.html">Metodología</a></li>
+                <li><a href="opiniones.html">Opiniones</a></li>
+              </ul>
+            </li>
+            <li class="submenu">
+              <a href="#" id="desplegarMenu2">
+                Eventos <span class="flecha"></span>
+              </a>
+              <ul class="opciones">
+                <li><a href="proximos.html">Próximos</a></li>
+                <li><a href="eventos.html">Anteriores</a></li>
+              </ul>
+            </li>
+            <li><a href="apps.html">Apps</a></li>
+            <li><a href="consultorias.html">Consultorías</a></li>
+            <li><a href="about.html">Sobre GeoStyle</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- Fin de la barra de navegación -->
 
-        <a class="mail-contacto" href="https://borealaustral.cl/aurora.html"
-          >www.borealaustral.cl/aurora</a
-        >
+      <!-- Contenido Principal -->
+      <main class="content-wrap">
+        <section class="apps-section">
+          <h1>Apps</h1>
+          <p>
+            Las aplicaciones ahora están disponibles en el siguiente enlace:
+          </p>
+          <a
+            class="btn-link"
+            href="https://borealaustral.cl/aurora.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            www.borealaustral.cl/aurora
+          </a>
+        </section>
+      </main>
+      <!-- Fin del contenido principal -->
 
-        <br />
-        <br />
-        <br />
-      </div>
-
-      <!-- Empieza el footer -->
-      <footer>
+      <!-- Footer Oscuro Mejorado -->
+      <footer class="footer-improved footer">
         <div class="container">
           <div class="row">
             <div class="col-md-6">
@@ -97,6 +97,7 @@
                   <a
                     href="https://www.youtube.com/channel/UC3Hepnp1iAuiELS5kDGrReQ"
                     target="_blank"
+                    rel="noopener noreferrer"
                     ><i class="fab fa-youtube"></i> YouTube</a
                   >
                 </li>
@@ -108,14 +109,16 @@
                   ><img
                     class="logo_gs_fin"
                     src="images/logo_final.svg"
-                    alt="Logo de tu empresa"
+                    alt="Logo de GeoStyle"
                 /></a>
               </div>
             </div>
           </div>
         </div>
       </footer>
+      <!-- Fin del footer -->
     </div>
-    <!-- Termina el footer -->
+    <!-- Script del menú -->
+    <script src="script.js"></script>
   </body>
 </html>
