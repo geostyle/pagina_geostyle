@@ -844,7 +844,7 @@ a:hover {
   margin-bottom: 3rem;
 }
 
-/* Para pantallas grandes: min 450px */
+/* Versión escritorio: min 450px */
 .opiniones-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
@@ -916,19 +916,15 @@ a:hover {
   padding: 0 2rem;
   text-align: center;
 }
-
-/* 
-   Para 1 columna y centrar la tarjeta,
-   evitando gran espacio en blanco a los lados.
-*/
 .eventos-grid {
   display: grid;
-  grid-template-columns: 1fr; /* Solo 1 columna */
+  /* 1 sola columna para centrar la tarjeta */
+  grid-template-columns: 1fr;
   gap: 2rem;
   max-width: 120rem;
   margin: 0 auto 3rem auto;
   padding: 0 2rem;
-  justify-items: center; /* Centra el contenido de la columna */
+  justify-items: center; /* Para centrar la(s) tarjeta(s) */
 }
 .evento-card {
   background-color: #ffffff;
@@ -936,17 +932,15 @@ a:hover {
   box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
   text-align: center;
-  padding: 2rem 2rem;
+  padding: 2rem;
 
-  /* Máximo ancho de la tarjeta, para que no se “estire” */
-  max-width: 300px;
-  width: 100%; /* Ocupa 100% dentro de esa columna */
+  /* Máximo ancho de la tarjeta */
+  max-width: 450px;
+  width: 100%;
 }
-
-/* Ajuste de la imagen: centrado y límite de altura (opcional) */
 .img-evento {
   max-width: 100%;
-  max-height: 400px; /* Ajusta a tu gusto */
+  max-height: 400px;
   object-fit: cover;
   display: block;
   margin: 0 auto;
@@ -1073,20 +1067,39 @@ a:hover {
 ================================================================
 */
 @media (max-width: 767px) {
-  /* Si deseas 1 columna en opiniones y eventos en móvil (se mantiene) */
+  /* 
+     1) Opiniones -> 1 columna (ya lo tenías) 
+     2) AUMENTAR TAMAÑO DE IMÁGENES en móviles
+        Reducimos padding lateral y márgenes, 
+        para que la imagen ocupe más espacio visible.
+  */
   .opiniones-grid {
     grid-template-columns: 1fr;
-  }
-  .eventos-grid {
-    grid-template-columns: 1fr;
+    gap: 1rem; /* Menos separación para que se vean más grandes */
+    padding: 0 1rem; /* Menos padding lateral */
   }
 
-  /* Ajustar imágenes en móvil */
-  .img-opinion,
-  .img-evento {
+  .opinion-card {
+    margin: 0 auto;
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: 600px; /* Opcional: si quieres un tope de 600px */
+  }
+
+  .img-opinion {
+    width: 100%;
     max-width: 100%;
     height: auto;
     display: block;
+    margin: 0 auto;
+  }
+
+  /* Eventos -> 1 columna (ya lo tienes) */
+  .eventos-grid {
+    grid-template-columns: 1fr;
+  }
+  .img-evento {
+    max-width: 100%;
+    height: auto;
     margin: 0 auto;
   }
 }
