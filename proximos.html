@@ -1,93 +1,285 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Próximos eventos</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Próximos eventos</title>
 
-    <!-- Preloads y fuentes -->
-    <link rel="preload" href="css/normalize.css" as="style" />
-    <link rel="stylesheet" href="css/normalize.css" />
+  <!-- Preloads y fuentes -->
+  <link rel="preload" href="css/normalize.css" as="style" />
+  <link rel="stylesheet" href="css/normalize.css" />
 
-    <!-- Íconos FontAwesome -->
-    <script
-      rel="preload"
-      src="https://kit.fontawesome.com/e43319e4d6.js"
-      crossorigin="anonymous"
-    ></script>
+  <!-- Íconos FontAwesome -->
+  <script src="https://kit.fontawesome.com/e43319e4d6.js" crossorigin="anonymous"></script>
 
-    <link rel="icon" href="images/logo_gs_v2.png" type="image/png" />
+  <link rel="icon" href="images/logo_gs_v2.png" type="image/png" />
 
-    <!-- Estilos principales -->
-    <link rel="preload" href="css/style.css" as="style" />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <div class="page-container">
-      <div class="content-wrap">
-        <!-- Barra de navegación -->
-        <header class="nav-bg">
-          <a href="index.html">
-            <img class="logo" src="images/logo_final.svg" alt="logo geostyle" />
-          </a>
-          <nav class="navegacion-principal contenedor">
-            <div class="menu-icon">
-              <i class="fas fa-bars"></i>
-            </div>
-            <ul class="menu">
-              <li><a href="index.html">Inicio</a></li>
-              <li class="submenu">
-                <a href="#" id="desplegarMenu1">
-                  Cursos <span class="flecha"></span>
-                </a>
-                <ul class="opciones">
-                  <li><a href="cursos.html">Catálogo</a></li>
-                  <li><a href="ejemplos.html">Ejemplos</a></li>
-                  <li><a href="metodologia.html">Metodología</a></li>
-                  <li><a href="opiniones.html">Opiniones</a></li>
-                </ul>
-              </li>
-              <li class="submenu">
-                <a href="#" id="desplegarMenu2">
-                  Eventos <span class="flecha"></span>
-                </a>
-                <ul class="opciones">
-                  <li><a href="proximos.html">Próximos</a></li>
-                  <li><a href="eventos.html">Anteriores</a></li>
-                </ul>
-              </li>
-              <li><a href="about.html">Sobre GeoStyle</a></li>
-              <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-          </nav>
-        </header>
-        <script src="script.js"></script>
-        <!-- Fin de la barra de navegación -->
+  <!-- Estilos principales -->
+  <link rel="preload" href="css/style.css" as="style" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="page-container">
+    <div class="content-wrap">
 
-        <!-- Contenido principal -->
-        <main class="proximos-section">
-          <h1>Próximo Evento</h1>
-          <p class="texto-intro-proximos">
-            Por el momento no hay eventos agendados. Mantente atento a esta
-            sección para conocer nuestros próximos cursos y charlas en vivo.
+      <!-- Barra de navegación -->
+      <header class="nav-bg">
+        <a href="index.html">
+          <img class="logo" src="images/logo_final.svg" alt="logo GeoStyle" />
+        </a>
+        <nav class="navegacion-principal contenedor">
+          <div class="menu-icon"><i class="fas fa-bars"></i></div>
+          <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li class="submenu">
+              <a href="#" id="desplegarMenu1">Cursos <span class="flecha"></span></a>
+              <ul class="opciones">
+                <li><a href="cursos.html">Catálogo</a></li>
+                <li><a href="ejemplos.html">Ejemplos</a></li>
+                <li><a href="metodologia.html">Metodología</a></li>
+                <li><a href="opiniones.html">Opiniones</a></li>
+              </ul>
+            </li>
+            <li class="submenu">
+              <a href="#" id="desplegarMenu2">Eventos <span class="flecha"></span></a>
+              <ul class="opciones">
+                <li><a href="proximos.html">Próximos</a></li>
+                <li><a href="eventos.html">Anteriores</a></li>
+              </ul>
+            </li>
+            <li><a href="about.html">Sobre GeoStyle</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+      <script src="script.js"></script>
+      <!-- /Barra de navegación -->
+
+      <!-- Contenido principal -->
+      <main class="proximos-section container">
+        <article class="proximo-evento-card">
+          <h1 class="section-title">Próximo evento</h1>
+          <br>
+          <h1 class="event-title">
+            Curso online en vivo:<br>
+            Introducción a Google Earth Engine (7ma versión)
+          </h2>
+          <br>
+          <p class="intro-text">
+            En esta página encontrarás la información detallada del curso, así como las respuestas a las preguntas más frecuentes.
           </p>
-
-          <div class="proximo-evento-card">
-            <h2>¡Pronto más novedades!</h2>
-            <p>
-              Estamos trabajando para preparar nuevos eventos y talleres. Si
-              deseas recibir noticias, revisa nuestra sección de
-              <a href="cursos.html">cursos</a> o nuestro canal de
-              <a
-                href="https://www.youtube.com/channel/UC3Hepnp1iAuiELS5kDGrReQ"
-                target="_blank"
-                >YouTube</a
-              >.
-            </p>
+          <br>
+          <figure>
+            <img
+              class="event-image"
+              src="images/Curso GEE 2025.png"
+              alt="Flyer del curso de Google Earth Engine"
+            />
+          </figure>
+          <br>
+          <!-- Preguntas frecuentes iniciales -->
+          <section class="faq-section">
+            <dl>
+              <div class="faq-item">
+                <dt>1) ¿En qué fecha es el curso en vivo?</dt>
+                <dd>Los días 12, 14, y 16 de mayo (19:00–20:30 hrs. Chile).</dd>
+              </div>
+              <br>
+              <div class="faq-item">
+                <dt>2) ¿Las clases se grabarán?</dt>
+                <dd>Sí, serán grabadas y compartidas en Google Drive. Si no puedes asistir en vivo, podrás ver los videos junto con el material.</dd>
+              </div>
+              <br>
+              <div class="faq-item">
+                <dt>3) ¿El curso entrega certificado?</dt>
+                <dd>Sí, el curso entrega certificado sin necesidad de realizar trabajo extra para aprobar.</dd>
+              </div>
+            </dl>
+          </section>
+          <br>
+          <!-- Programa del curso -->
+          <div class="table-container schedule">
+            <h3>4) ¿Cómo es el programa y contenidos del curso?</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Clase</th>
+                  <th>Fecha</th>
+                  <th>Tema</th>
+                  <th>Contenidos</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>12/05</td>
+                  <td>Introducción a JavaScript</td>
+                  <td>
+                    <ul>
+                      <li>¿Qué es JavaScript?</li>
+                      <li>¿Qué es Google Earth Engine?</li>
+                      <li>Manipular archivos vectoriales</li>
+                      <li>Importar y exportar shapefiles</li>
+                      <li>Análisis de variables topográficas (elevación, pendiente, orientación laderas)</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>14/05</td>
+                  <td>Procesamiento de Imágenes Satelitales</td>
+                  <td>
+                    <ul>
+                      <li>Filtrar imágenes satelitales</li>
+                      <li>Procesar imágenes Landsat-8</li>
+                      <li>Procesar imágenes Sentinel-2</li>
+                      <li>Exportar imágenes satelitales</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>16/05</td>
+                  <td>Índices Espectrales</td>
+                  <td>
+                    <ul>
+                      <li>Cálculo de índices espectrales (NDVI, EVI, NDWI, etc.)</li>
+                      <li>Composiciones espacio-temporales</li>
+                      <li>Series de tiempo de índices espectrales</li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-        </main>
-      </div>
+
+          <!-- Resto de preguntas frecuentes -->
+          <br>
+          <section class="faq-section">
+            <dl>
+              <div class="faq-item">
+                <dt>5) ¿Qué es Google Earth Engine y qué ventajas me entrega?</dt>
+                <dd>
+                  Plataforma en la nube para análisis geoespacial masivo con JavaScript. Permite procesar grandes volúmenes de imágenes sin necesitar un equipo potente.
+                </dd>
+              </div>
+              <br>
+              <div class="faq-item">
+                <dt>6) ¿Qué es JavaScript?</dt>
+                <dd>
+                  JavaScript es un lenguaje de programación que permite crear instrucciones para controlar cómo funcionan aplicaciones web.
+                  En Google Earth Engine, se usa JavaScript para escribir códigos que procesan, analizan y visualizan datos satelitales de forma rápida y personalizada.
+                </dd>
+              </div>
+              <br>
+              <div class="faq-item">
+                <dt>7) ¿Google Earth Engine es gratis o debo comprar una licencia?</dt>
+                <dd>
+                  Es gratis. Solo necesitas crear una cuenta de Google y registrarte en Google Earth Engine.
+                </dd>
+              </div>              
+              <br>
+              <div class="faq-item">
+                <dt>8) ¿Qué son los índices espectrales?</dt>
+                <dd>
+                  Son combinaciones matemáticas de diferentes bandas de una imagen satelital que permiten resaltar características específicas de la 
+                  superficie terrestre, como vegetación, agua, nieve o incendios.
+                  Por ejemplo, el NDVI mide la salud de la vegetación combinando el rojo y el infrarrojo cercano.
+                </dd>
+              </div>
+              <br>
+              <div class="faq-item">
+                <dt>9) ¿Qué obtengo al inscribirme al curso?</dt>
+                <dd>
+                  Además del curso en vivo, recibirás de regalo un curso asincrónico titulado "Google Earth Engine y Machine Learning", disponible en Udemy
+                </dd>
+              </div>
+              <br>
+              <div class="faq-item">
+                <dt>10) ¿Puedes contar un poco más sobre los cursos asincrónicos de regalo?</dt>
+                <dd>
+                  Es un curso con videos grabados, el cuál se encuentra en la plataforma de cursos Udemy. Una vez que te inscribes, tienes acceso de por vida, tareas para practicar y certificado de aprobación al finalizar. Este curso es un complemento al curso en vivo, ya que tiene videos extra que no se ven en el curso en vivo y te permite verlos a tu ritmo.
+                </dd>
+              </div>
+              <br>
+              <div class="faq-item">
+                <dt>11) No soy de Chile, ¿puedo participar igual?</dt>
+                <dd>Sí, abierto a personas de todos los países.</dd>
+              </div>
+              <br>
+              <div class="faq-item">
+                <dt>12) ¿Cómo sé si el curso es bueno?</dt>
+                <dd>
+                  Puedes leer las opiniones de alumnos anteriores 
+                  <a href="https://geostyle.xyz/opiniones.html" target="_blank" rel="noopener noreferrer">aquí</a>.
+                </dd>
+              </div>
+              <br>
+              <div class="faq-item">
+                <dt>13) ¿Qué conocimientos previos necesito?</dt>
+                <dd>Conocimientos básicos de SIG y Teledetección</dd>
+              </div>
+              <br>
+              <div class="faq-item">
+                <dt>14) ¿A través de qué plataforma se dictará el curso?</dt>
+                <dd>Google Meet.</dd>
+              </div>
+              <br>
+              <div class="faq-item">
+                <dt>15) ¿Quién dictará el curso?</dt>
+                <dd>
+                  Andrés Salazar, Ingeniero Agrónomo y Magíster en Recursos Naturales, ambos grados estudiados en la Pontificia Universidad Católica de Chile. Además, cuenta con dos diplomados estudiados en la Universidad de Chile: "Gestión Integrada de Recursos Hídricos" y "Modelación Hidrológica de Cuencas". También posee un certificado de Desarrollador Web Full-Stack. Andrés lleva más de 4 años enseñando Google Earth Engine, R y Python.
+                  <br />
+                  <a href="https://www.linkedin.com/in/andr%C3%A9s-salazar-6213b6163/" target="_blank" rel="noopener noreferrer">Perfil LinkedIn</a> |
+                  <a href="https://www.researchgate.net/profile/Andres-Salazar-14" target="_blank" rel="noopener noreferrer">ResearchGate</a>
+                </dd>
+              </div>
+              <br>
+              <div class="faq-item">
+                <dt>16) ¿Cuál es el valor del curso?</dt>
+                <dd>
+                  Chile: 50.000 CLP<br />
+                  Extranjeros: 50 USD
+                </dd>
+              </div>
+              <br>
+              <div class="faq-item">
+                <dt>17) Quiero participar del curso pero no tengo el dinero suficiente para pagar por él</dt>
+                <dd>
+                  No te preocupes. En GeoStyle entendemos que la educación es un derecho y no un privilegio. 
+                  Por eso, ofrecemos becas para quienes no pueden pagar el curso. Si quieres postular a una beca, envía un correo a Andrés (ajsalazar@uc.cl)
+                </dd>
+              </div>
+              <br>
+              <div class="faq-item">
+                <dt>18) ¿Cómo se realiza el pago?</dt>
+                <dd>
+                  Chile: transferencia bancaria<br />
+                  Extranjeros: PayPal
+                </dd>
+              </div>
+              <br>
+              <div class="faq-item">
+                <dt>19) Soy extranjero y nunca he usado PayPal</dt>
+                <dd>
+                  Es un sistema súper seguro. Solo necesitas una tarjeta de crédito vinculada. Más info en 
+                  <a href="https://www.paypal.com/cl/webapps/mpp/what-is-paypal" target="_blank" rel="noopener noreferrer">este enlace</a>.
+                </dd>
+              </div>
+              <br>
+              <div class="faq-item">
+                <dt>20) ¿Dónde me inscribo?</dt>
+                <dd>
+                  Completa el formulario en 
+                  <a href="https://forms.gle/vq17GQ2Hx4357Vuv9" target="_blank" rel="noopener noreferrer">este link</a>.
+                </dd>
+              </div>
+            </dl>
+          </section>
+        </article>
+      </main>
+      <!-- /Contenido principal -->
 
       <!-- Footer -->
       <footer class="footer-improved">
@@ -96,33 +288,30 @@
             <div class="col-md-6">
               <ul class="footer-links">
                 <li>
-                  <a href="mailto:ajsalazar@uc.cl"
-                    ><i class="far fa-envelope"></i> ajsalazar@uc.cl</a
-                  >
+                  <a href="mailto:ajsalazar@uc.cl">
+                    <i class="far fa-envelope"></i> ajsalazar@uc.cl
+                  </a>
                 </li>
                 <li>
-                  <a
-                    href="https://www.youtube.com/channel/UC3Hepnp1iAuiELS5kDGrReQ"
-                    target="_blank"
-                    ><i class="fab fa-youtube"></i> YouTube</a
-                  >
+                  <a href="https://www.youtube.com/channel/UC3Hepnp1iAuiELS5kDGrReQ" target="_blank">
+                    <i class="fab fa-youtube"></i> YouTube
+                  </a>
                 </li>
               </ul>
             </div>
             <div class="col-md-6">
               <div class="logo_footer">
-                <a href="index.html"
-                  ><img
-                    class="logo_gs_fin"
-                    src="images/logo_final.svg"
-                    alt="Logo GeoStyle"
-                /></a>
+                <a href="index.html">
+                  <img class="logo_gs_fin" src="images/logo_final.svg" alt="Logo GeoStyle" />
+                </a>
               </div>
             </div>
           </div>
         </div>
       </footer>
-      <!-- Fin del footer -->
+      <!-- /Footer -->
+
     </div>
-  </body>
+  </div>
+</body>
 </html>
